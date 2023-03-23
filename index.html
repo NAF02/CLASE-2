@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>INDEX</title>
+    </head>
+    <body>
+        <nav>
+        <a href="index.html">INDEX</a>
+        <a href="page-1.html">SKETCH-1</a>
+        <a href="page-2.html">SKETCH-2</a>
+        <a href="page-3.html">SKETCH-3</a>
+        <a href="page-3.html">easteregg</a>
+        </nav>
+        <main></main>
+        <aside>
+        <p>¡OÑA!,mi nombre es Natalie Astudillo Fingerhut, me dicen Shiory o Leona y hago éste electivo por sinceramente me llama la programación y como introducción a todo el mundo de páginas lo veo como una opción muy viable.</p>
+        </aside>
+        <script>
+            function setup() {
+                createCanvas(windowWidth, windowHeight);
+                selectAll("a")[0].addClass("aqui");
+            }
+
+            function draw() {
+                background(220,0,0);
+                textAlign(CENTER, CENTER);
+                textSize(50);
+                text("🍄", mouseX, mouseY);
+            }
+            function windowResized() {
+                resizeCanvas(windowWidth, windowHeight);
+            }
+        </script>
+    </body>
+</html>
+
